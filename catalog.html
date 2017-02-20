@@ -27,15 +27,48 @@
     <main>
         <section class="filter">
             <form action="#" method="get">
-                <h3>Стоимость:</h3>
-                <div class="toddles">
-                    <div class="full-scale"></div>
-                    <div class="selected-range"></div>
-                    <div class="left-toggle"></div>
-                    <div class="right-toggle"></div>
-                </div>
-                <label>От <input class="price-input" type="text" name="min-price" id="min-price" value="0"></label>
-                <label>До <input class="price-input" type="text" name="max-price" id="max-price" value="15000"></label>
+                <fieldset>
+                   <legend>Стоимость:</legend>
+                    <div class="toddles">
+                        <div class="full-scale"></div>
+                        <div class="selected-range"></div>
+                        <div class="left-toggle"></div>
+                        <div class="right-toggle"></div>
+                        </div>
+                    <label>От <input class="price-input" type="text" name="min-price" id="min-price" value="0"></label>
+                    <label>До <input class="price-input" type="text" name="max-price" id="max-price" value="15000"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <label>
+                        <input type="radio" name="layout" value="adaptive" checked> Адаптивная
+                    </label>
+                    <label>
+                        <input type="radio" name="layout" value="fixed"> Фиксированная
+                    </label>
+                    <label>
+                        <input type="radio" name="layout" value="rubber"> Резиновая
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <label>
+                        <input type="checkbox" name="feature" value="slider" checked> Слайдер
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature" value="preferences"> Блок преимуществ
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature" value="news" checked> Новости
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature" value="gallery"> Галерея
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature" value="card"> Корзина
+                    </label>
+                </fieldset>
+                <button class="btn btn-submit" type="submit">Показать</button>
             </form>
         </section>
         <section class="map">
