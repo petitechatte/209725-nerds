@@ -7,6 +7,7 @@ body {
     margin: 0 auto;
     outline: 2px solid red;
 }
+/* шапка сайта */
 
 .page-header {
     max-width: 900px;
@@ -21,10 +22,32 @@ body {
 .header-top {
     min-height: 130px;
     outline: 2px solid blue;
-    display: flex;
 }
 
 .header-top h1 {
+    display: inline-block;
     outline: 2px solid yellow;
     margin: 25px 10px;
+    margin-right: auto;
+    vertical-align: middle;
 }
+
+.main-menu {
+    display: inline-flex;
+    outline: 2px solid yellow;
+    margin: 25px 10px;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+.main-menu ul, 
+.main-menu li {
+    display: flex;
+    vertical-align: middle;
+}
+
+.main-menu li {
+    justify-content: space-around;
+}
+
+.
