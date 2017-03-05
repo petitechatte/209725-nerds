@@ -1,0 +1,30 @@
+.hidden {
+    display: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.page-header {
+    max-width: 900px;
+    margin: 0 auto;
+    outline: 2px solid green;
+}
+
+.main-page-header {
+    min-height: 327px;
+}
+
+.header-top {
+    min-height: 130px;
+    outline: 2px solid blue;
+    display: flex;
+}
+
+.header-top h1 {
+    outline: 2px solid yellow;
+    margin: 25px 10px;
+}
