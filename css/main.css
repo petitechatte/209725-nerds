@@ -7,11 +7,15 @@ body {
     margin: 0 auto;
     outline: 2px solid red;
 }
-/* шапка сайта */
 
-.page-header {
+.wrapper {
     max-width: 900px;
     margin: 0 auto;
+}
+
+/* шапка сайта */
+
+.page-header {        
     outline: 2px solid green;
 }
 
@@ -22,32 +26,59 @@ body {
 .header-top {
     min-height: 130px;
     outline: 2px solid blue;
+    text-align: justify;
 }
 
 .header-top h1 {
     display: inline-block;
     outline: 2px solid yellow;
     margin: 25px 10px;
-    margin-right: auto;
     vertical-align: middle;
 }
 
 .main-menu {
-    display: inline-flex;
+    display: inline-block;
     outline: 2px solid yellow;
+    width: 75%;
     margin: 25px 10px;
-    margin-left: auto;
+    vertical-align: middle;
+    text-align: right;
+}
+ 
+.main-menu li {
+    display: inline-block;
     vertical-align: middle;
 }
 
-.main-menu ul, 
 .main-menu li {
+    margin: 0 20px;;
+}
+
+/* карусель */
+
+.slider {
+    min-height: 320px;
+}
+
+.slide {
+    display: none;
+    padding-right: 70%;
+}
+
+.slider .current {
+    display: block;
+}
+
+/* предложения услуг */
+
+.offers {
     display: flex;
-    vertical-align: middle;
+    min-height: 460px;
+    outline: 2px solid green;
 }
 
-.main-menu li {
-    justify-content: space-around;
+.offer { 
+    text-align: center;
+    height: 100%;
 }
 
-.
