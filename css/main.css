@@ -92,19 +92,30 @@ body {
 /* описание студии */
 
 .studio-description {
+    display: table;
     outline: 2px solid green;
 }
 
+.description-row {
+    display: table-row;
+}
+
 .logo-mini {
+    display: table-cell;
     outline: 2px solid blue;
-    max-width: 300px;
-    float: right;
+    width: 33%;
     text-align: center;
 }
 
 .description-heading,
 .description-left-column {
-    float: left;
-    max-width: 600px;
+    display: table-cell;
+    width: 66%;
+    outline: 2px solid blue;
+}
+
+.description-right-column {
+    display: table-cell;
+    width: 33%;
     outline: 2px solid blue;
 }
