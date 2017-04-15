@@ -73,6 +73,7 @@ body {
 
 .offers {
     display: flex;
+    justify-content: space-between;
     min-height: 460px;
     outline: 2px solid green;
 }
@@ -80,5 +81,18 @@ body {
 .offer { 
     text-align: center;
     height: 100%;
+}
+
+/* описание студии */
+
+.studio-description {
+    outline: 2px solid green;
+}
+
+.logo-mini {
+    outline: 2px solid green;
+    min-width: 260px;
+    float: right;
+    text-align: center;
 }
 
