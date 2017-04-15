@@ -13,6 +13,12 @@ body {
     margin: 0 auto;
 }
 
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
 /* шапка сайта */
 
 .page-header {        
@@ -90,9 +96,15 @@ body {
 }
 
 .logo-mini {
-    outline: 2px solid green;
-    min-width: 260px;
+    outline: 2px solid blue;
+    max-width: 300px;
     float: right;
     text-align: center;
 }
 
+.description-heading,
+.description-left-column {
+    float: left;
+    max-width: 600px;
+    outline: 2px solid blue;
+}
