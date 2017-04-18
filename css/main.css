@@ -92,30 +92,31 @@ body {
 /* описание студии */
 
 .studio-description {
-    display: table;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     outline: 2px solid green;
 }
 
-.description-row {
-    display: table-row;
-}
-
 .logo-mini {
-    display: table-cell;
     outline: 2px solid blue;
-    width: 33%;
+    width: 33.3%;
     text-align: center;
 }
 
-.description-heading,
-.description-left-column {
-    display: table-cell;
-    width: 66%;
+.description-heading {
+   
+    width: 66.6%;
     outline: 2px solid blue;
 }
 
-.description-right-column {
-    display: table-cell;
-    width: 33%;
+.description-left-column {
     outline: 2px solid blue;
+    
+     width: 66.6%;
+}
+
+.description-right-column {
+     outline: 2px solid blue;
+    width: 33.3%;
 }
