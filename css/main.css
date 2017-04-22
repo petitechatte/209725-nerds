@@ -19,6 +19,12 @@ body {
     clear: both;
 }
 
+hr {
+    width: 900px;
+    margin: 0 auto;
+    color: #eeeeee;
+}
+
 /* шапка сайта */
 
 .page-header {        
@@ -104,19 +110,19 @@ body {
     text-align: center;
 }
 
-.description-heading {
-   
+.description-heading {   
     width: 66.6%;
+    min-height: 250px;
     outline: 2px solid blue;
 }
 
 .description-left-column {
-    outline: 2px solid blue;
-    
+     outline: 2px solid blue;    
      width: 66.6%;
+     min-height: 220px;
 }
 
 .description-right-column {
      outline: 2px solid blue;
-    width: 33.3%;
+     width: 33.3%;
 }
