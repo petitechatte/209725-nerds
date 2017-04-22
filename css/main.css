@@ -126,3 +126,24 @@ hr {
      outline: 2px solid blue;
      width: 33.3%;
 }
+
+/* спонсоры */
+
+.external-links {
+    outline: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 170px;
+}
+
+.external-links a {
+    margin: 0 15px;
+    opacity: 0.3;
+}
+
+.external-links a:hover,
+.external-links a:active {
+    opacity: 1;
+}
