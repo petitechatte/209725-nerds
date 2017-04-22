@@ -20,6 +20,7 @@ body {
 }
 
 hr {
+    height: 2px;
     width: 900px;
     margin: 0 auto;
     color: #eeeeee;
@@ -146,4 +147,22 @@ hr {
 .external-links a:hover,
 .external-links a:active {
     opacity: 1;
+}
+
+/* карта */
+
+.map {
+    height: 415px;
+    margin-top: 85px;
+    outline: 2px solid green;
+    border-top: 1px solid transparent;
+}
+
+.studio-address {
+    outline: 2px solid blue;
+    width: 255px;
+    box-sizing: border-box;
+    margin-top: 88px;
+    margin-left: 108px;
+    
 }
