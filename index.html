@@ -124,23 +124,28 @@
                 <div class="map-label"></div>
             </div>
         </section>
-        <div class="popup popup-write">
-            <div class="btn-close"></div>
-            <form action="#" method="post">
-                <label for="name-field">Ваше имя</label>
-                <input type="text" size="25" name="name" id="name-field" autocomplete="on" required value="Представьтесь, пожалуйста">
-                <label for="email-field">Ваш e-mail:</label>
-                <input type="email" size="25" name="email" id="email-field" autocomplete="on" required value="Для отправки ответа">
-                <label for="letter-field">Текст письма:</label>
-                <textarea rows="5" cols="50" name="message" id="letter-field" required>В свободной форме</textarea>
-                <button type="submit">Отправить</button>
-            </form>
+        <div class="popup-wrapper">
+            <div class="popup popup-write">
+                <div class="btn-close"></div>
+                    <form action="#" method="post">
+                        <label for="name-field">Ваше имя</label>
+                        <input type="text" size="25" name="name" id="name-field" autocomplete="on" required value="Представьтесь, пожалуйста">
+                        <label for="email-field">Ваш e-mail:</label>
+                        <input type="email" size="25" name="email" id="email-field" autocomplete="on" required value="Для отправки ответа">
+                        <label for="letter-field">Текст письма:</label>
+                        <textarea rows="5" cols="50" name="message" id="letter-field" required>В свободной форме</textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+            </div>
         </div>
+        
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
        <hr class="hidden">
-        <h2>Давайте дружить, это выгодно!</h2>
+       <div class="discont">
+           <h2>Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
+       </div>
         <div class="socials">
            <b class="hidden">Подписывайтесь на наши группы:</b>
             <a class="btn-social btn-social-vk" href="#">В контакте</a>

@@ -158,11 +158,50 @@ hr {
     border-top: 1px solid transparent;
 }
 
-.studio-address {
-    outline: 2px solid blue;
+.studio-address {    
     width: 255px;
     box-sizing: border-box;
     margin-top: 88px;
     margin-left: 108px;
+    outline: 2px solid blue;
+}
+
+.popup-wrapper {
+    position: relative;
+}
+
+.popup-write {
+    position: absolute;
+    top: -450px;
+    left: 275px;
+    width: 630px;
+    height: 415px;
+    outline: 2px solid blue;
+}
+
+/* подвал */
+
+.page-footer {
+    min-height: 215px;
+    padding-top: 75px;
+}
+
+.page-footer .discont {
+    float: right;
+    margin-right: 20px;
+    outline: 2px solid blue;
+}
+
+.socials {
+    float: left;
+    max-width: 250px;
+    outline: 2px solid blue;
     
+}
+
+.socials a {
+    outline: 2px solid gray;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
 }
