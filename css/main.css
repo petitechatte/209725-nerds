@@ -67,7 +67,7 @@ hr {
 }
 
 .main-menu li {
-    margin: 0 20px;;
+    margin: 0 20px;
 }
 
 /* карусель */
@@ -223,16 +223,22 @@ hr {
 
 /* каталог */
 
+.header-top h2 {
+    margin-bottom: 0; /* убирает зазор под шапкой */
+}
+
 .inner main {
     display: flex;
 }
 
 .filter {
     width: 300px;
-    outline: 2px solid blue;    
+    outline: 2px solid blue; 
+    margin: 0;
 }
 
 .staff-catalog {
     flex-grow: 1;
     outline: 2px solid blue;
+    margin: 0;
 }
