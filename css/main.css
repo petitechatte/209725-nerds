@@ -1,3 +1,5 @@
+/* общие свойства */
+
 .hidden {
     display: none;
 }
@@ -30,6 +32,7 @@ hr {
 
 .page-header {        
     outline: 2px solid green;
+    min-height: 330px;
 }
 
 .main-page-header {
@@ -149,7 +152,7 @@ hr {
     opacity: 1;
 }
 
-/* карта */
+/* карта и всплывающее окно */
 
 .map {
     height: 415px;
@@ -173,28 +176,39 @@ hr {
 .popup-write {
     position: absolute;
     top: -450px;
-    left: 275px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 630px;
     height: 415px;
     outline: 2px solid blue;
+}
+
+.inner .popup-wrapper {
+    position: static;
+}
+
+.inner .popup-write {
+    top: 276px;
 }
 
 /* подвал */
 
 .page-footer {
     min-height: 215px;
-    padding-top: 75px;
+    outline: 2px solid green;
 }
 
 .page-footer .discont {
     float: right;
     margin-right: 20px;
+    margin-top: 75px;
     outline: 2px solid blue;
 }
 
 .socials {
     float: left;
     max-width: 250px;
+    margin-top: 75px;
     outline: 2px solid blue;
     
 }
