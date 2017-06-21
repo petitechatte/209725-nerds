@@ -219,3 +219,20 @@ hr {
     width: 60px;
     height: 60px;
 }
+
+
+/* каталог */
+
+.inner main {
+    display: flex;
+}
+
+.filter {
+    width: 300px;
+    outline: 2px solid blue;    
+}
+
+.staff-catalog {
+    flex-grow: 1;
+    outline: 2px solid blue;
+}
