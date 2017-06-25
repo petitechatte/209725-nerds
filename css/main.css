@@ -1,18 +1,22 @@
 /* общие свойства */
 
-.hidden {
-    display: none;
-}
-
 body {
     max-width: 1200px;
     margin: 0 auto;
     outline: 2px solid red;
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .wrapper {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
 
 .clearfix::after {
@@ -59,15 +63,34 @@ hr {
     margin: 25px 10px;
     vertical-align: middle;
     text-align: right;
+    
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
  
 .main-menu li {
     display: inline-block;
-    vertical-align: middle;
+    margin: 0 20px;
+    vertical-align: middle;    
 }
 
-.main-menu li {
-    margin: 0 20px;
+.main-menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-menu li a:hover {
+    color: #fb565a;
+}
+
+.main-menu li a:active {
+    color: #000000;
+    opacity: 0.4;
+}
+
+.main-menu li a.active {
+    border-bottom: 2px solid #fb565a;
 }
 
 /* карусель */
