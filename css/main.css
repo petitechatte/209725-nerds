@@ -38,6 +38,7 @@ hr {
 .page-header {        
     outline: 2px solid green;
     min-height: 330px;
+    background-color: #eeeeee;
 }
 
 .main-page-header {
@@ -199,6 +200,7 @@ hr {
     margin-top: 85px;
     outline: 2px solid green;
     border-top: 1px solid transparent;
+    background-color: #b5b5b5;
 }
 
 .studio-address {    
