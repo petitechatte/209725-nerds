@@ -108,6 +108,25 @@ hr {
     display: block;
 }
 
+.slider h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.slider p {
+    color: #283136;
+}
+
+.slider a {
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #fb565a;
+}
+
 /* предложения услуг */
 
 .offers {
