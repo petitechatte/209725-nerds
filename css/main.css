@@ -5,9 +5,10 @@ body {
     margin: 0 auto;
     outline: 2px solid red;
     
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
+    color: #283136;
 }
 
 .wrapper {
@@ -100,7 +101,7 @@ hr {
 }
 
 .slide {
-    display: none;
+/*    display: none;*/
     padding-right: 70%;
 }
 
@@ -112,10 +113,7 @@ hr {
     font-size: 36px;
     line-height: 36px;
     font-weight: normal;
-}
-
-.slider p {
-    color: #283136;
+    color: #000000;
 }
 
 .slider a {
