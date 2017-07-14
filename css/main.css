@@ -7,13 +7,15 @@ body {
     
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
+    font-weight: 500;
     line-height: 22px;
     color: #283136;
 }
 
 .wrapper {
-    max-width: 900px;
+    max-width: 880px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .hidden {
@@ -37,62 +39,67 @@ hr {
 
 .page-header {        
     outline: 2px solid green;
-    min-height: 330px;
+    
     background-color: #eeeeee;
 }
 
-.main-page-header {
-    min-height: 327px;
-}
-
 .header-top {
-    min-height: 130px;
-    outline: 2px solid blue;
-    text-align: justify;
-}
-
-.header-top h1 {
-    display: inline-block;
-    outline: 2px solid yellow;
-    margin: 25px 10px;
-    vertical-align: middle;
-}
-
-.main-menu {
-    display: inline-block;
-    outline: 2px solid yellow;
-    width: 75%;
-    margin: 25px 10px;
-    vertical-align: middle;
-    text-align: right;
+    display: flex;
+    justify-content: justify;
     
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
 }
- 
-.main-menu li {
-    display: inline-block;
-    margin: 0 20px;
-    vertical-align: middle;    
+
+.header-top h1 {
+    margin-top: 27px;
+    margin-left: 0;
 }
 
-.main-menu li a {
+.main-menu {
+    flex-grow: 1;
+    margin-top: 54px;
+    margin-left: 18.3%;
+    margin-right: 5%;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-top a {
     color: #000000;
     text-decoration: none;
 }
 
-.main-menu li a:hover {
+.header-top a:hover {
     color: #fb565a;
 }
 
-.main-menu li a:active {
+.header-top a:active {
     color: #000000;
     opacity: 0.4;
 }
 
-.main-menu li a.active {
+.header-top a.active {
     border-bottom: 2px solid #fb565a;
+}
+
+.user-block {
+    margin-top: 54px;
+}
+
+.user-block .cart {
+    padding-left: 30px;
+}
+
+.user-block .icon-basket {
+    color: #a6a6a6;
 }
 
 /* карусель */
@@ -113,7 +120,7 @@ hr {
 .slider h2 {
     font-size: 36px;
     line-height: 36px;
-    font-weight: normal;
+    font-weight: 500;
     color: #000000;
 }
 
