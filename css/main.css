@@ -3,7 +3,6 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-    outline: 2px solid red;
     
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
@@ -60,13 +59,14 @@ hr {
 .main-menu {
     flex-grow: 1;
     margin-top: 54px;
-    margin-left: 18.3%;
-    margin-right: 5%;
+    margin-left: 18.5%;
+    margin-right: 1.7%;
 }
 
 .main-menu ul {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -75,19 +75,28 @@ hr {
 .header-top a {
     color: #000000;
     text-decoration: none;
+    white-space: nowrap;
 }
 
-.header-top a:hover {
+.header-top a:hover,
+.user-block a:hover .icon {
     color: #fb565a;
 }
 
-.header-top a:active {
+.header-top a:active,
+.user-block a:active .icon {
     color: #000000;
     opacity: 0.4;
 }
 
-.header-top a.active {
+.header-top a.active,
+.user-block a.active .icon {
     border-bottom: 2px solid #fb565a;
+}
+
+.main-menu a {
+    display: inline-block;
+    margin: 0 20px;
 }
 
 .user-block {
@@ -98,8 +107,10 @@ hr {
     padding-left: 30px;
 }
 
-.user-block .icon-basket {
+.user-block .icon {
+    font-size: 16px;
     color: #a6a6a6;
+    margin-right: 5px;
 }
 
 /* карусель */
