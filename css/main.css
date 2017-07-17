@@ -38,38 +38,78 @@ hr {
 
 .page-header {        
     outline: 2px solid green;
+    margin-top: 27px;
     
     background-color: #eeeeee;
 }
 
 .header-top {
-    display: flex;
-    justify-content: justify;
-    
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
 .header-top h1 {
-    margin-top: 27px;
-    margin-left: 0;
+    margin: 0;
+}
+
+.header-top h1 img {
+    width: 139px;
+    height: 56px;
 }
 
 .main-menu {
-    flex-grow: 1;
-    margin-top: 54px;
-    margin-left: 18.5%;
-    margin-right: 1.7%;
+    margin-top: 27px;
 }
 
 .main-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+@media screen and (max-width: 460px) { /* вертикальное меню */
+    .header-top {
+        text-align: center;
+    }
+    
+    .header-top h1,
+    .main-menu,
+    .user-block {
+        display: block;
+        width: 100%;
+    }
+    
+    .main-menu li {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 461px) { /* меню на инлайн-блоках */
+    .main-menu,
+    .main-menu li,
+    .user-block {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 900px) { /* вся шапка на флексах */
+    .header-top {
+        display: flex;
+        justify-content: justify;
+    }
+    
+    .main-menu {
+    flex-grow: 1;
+        margin-left: 18.5%;
+        margin-right: 5%;
+    }
+    
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .header-top a {
@@ -100,11 +140,7 @@ hr {
 }
 
 .user-block {
-    margin-top: 54px;
-}
-
-.user-block .cart {
-    padding-left: 30px;
+    margin-top: 27px;
 }
 
 .user-block .icon {
@@ -117,6 +153,7 @@ hr {
 
 .slider {
     min-height: 320px;
+    margin-top: 60px;
 }
 
 .slide {
