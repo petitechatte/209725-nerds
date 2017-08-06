@@ -39,6 +39,7 @@ hr {
 .page-header {        
     outline: 2px solid green;
     margin-top: 27px;
+    padding: 0;
     
     background-color: #eeeeee;
 }
@@ -160,12 +161,12 @@ hr {
 
 .slider {
     min-height: 320px;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .slide {
 /*    display: none;*/
-    padding-right: 70%;
+    padding-right: 45%;
 }
 
 .slider .current {
@@ -173,13 +174,23 @@ hr {
 }
 
 .slider h2 {
+    margin: 0;
+    padding: 18px 0;
     font-size: 36px;
     line-height: 36px;
     font-weight: 500;
     color: #000000;
 }
 
+.slide p {
+    margin: 0;
+}
+
 .slider a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 70px;
+    border-radius: 2px;
     font-size: 12px;
     line-height: 18px;
     color: #ffffff;
