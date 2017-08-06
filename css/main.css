@@ -68,58 +68,6 @@ hr {
     list-style-type: none;
 }
 
-@media screen and (max-width: 400px) { /* вертикальное меню */
-    .header-top {
-        text-align: center;
-    }
-    
-    .header-top h1,
-    .main-menu,
-    .user-block {
-        display: block;
-        width: 100%;
-    }
-    
-    .main-menu li {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 401px) { /* меню на инлайн-блоках */
-    .main-menu,
-    .main-menu li,
-    .user-block {
-        display: inline-block;
-    }
-    
-    .user-block a {
-        margin: 0 20px;
-    }
-}
-
-@media screen and (min-width: 900px) { /* вся шапка на флексах */
-    .header-top {
-        display: flex;
-        justify-content: justify;
-    }
-    
-    .main-menu {
-    flex-grow: 1;
-        margin-left: 18.5%;
-        margin-right: 5%;
-    }
-    
-    .main-menu ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .user-block a {
-        margin: 0;
-    }
-}
-
 .header-top a {
     color: #000000;
     text-decoration: none;
@@ -154,6 +102,58 @@ hr {
     font-size: 16px;
     color: #a6a6a6;
     margin-right: 5px;
+}
+
+@media screen and (max-width: 400px) { /* вертикальное меню */
+    .header-top {
+        text-align: center;
+    }
+    
+    .header-top h1,
+    .main-menu,
+    .user-block {
+        display: block;
+        width: 100%;
+    }
+    
+    .main-menu li {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 401px) { /* меню на инлайн-блоках */
+    .main-menu,
+    .main-menu li,
+    .user-block {
+        display: inline-block;
+    }
+    
+    .user-block a {
+        margin: 0 20px; /* выравнивание с меню по левому краю */
+    }
+}
+
+@media screen and (min-width: 900px) { /* вся шапка на флексах */
+    .header-top {
+        display: flex;
+        justify-content: justify;
+    }
+    
+    .main-menu {
+    flex-grow: 1;
+        margin-left: 18.5%;
+        margin-right: 5%;
+    }
+    
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .user-block a {
+        margin: 0; /* убираем отступ из предыдущего медиазапроса */
+    }
 }
 
 /* карусель */
